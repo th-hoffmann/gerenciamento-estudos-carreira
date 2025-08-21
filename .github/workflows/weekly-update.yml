@@ -1,0 +1,38 @@
+name: 📊 Weekly Progress Update
+
+on:
+  schedule:
+    # Executar toda segunda-feira às 09:00 UTC (06:00 BRT)
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Update progress badges
+        run: |
+          echo "🔄 Atualizando badges de progresso..."
+          # Aqui você pode adicionar scripts para calcular progresso automaticamente
+          # Baseado nas issues fechadas, commits, etc.
+          
+      - name: Update last update date
+        run: |
+          # Atualizar data de última atualização no README
+          sed -i "s/Última atualização: .*/Última atualização: $(date '+%d de %B de %Y')/g" README.md
+          sed -i "s/Próxima revisão: .*/Próxima revisão: $(date -d '+7 days' '+%d\/%m\/%Y')/g" DASHBOARD_KPIS.md
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          if git diff --staged --quiet; then
+            echo "Nenhuma mudança para commit"
+          else
+            git commit -m "📊 Atualização automática semanal de progresso"
+            git push
+          fi

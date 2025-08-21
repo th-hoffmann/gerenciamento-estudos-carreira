@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🎓 Plano de Desenvolvimento Integral em TI
+# 🎓 Plano de Desenvolvimento Integral em Infraestrutura e Cybersegurança
 
 *Gerenciamento de estudos e projetos que integram a formação acadêmica do Tecnólogo em Redes de Computadores com um roteiro prático de cursos focados em Infraestrutura, Segurança e Cloud.*
 

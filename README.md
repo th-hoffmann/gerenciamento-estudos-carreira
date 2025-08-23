@@ -2,7 +2,7 @@
   
 # 🎓 Plano de Desenvolvimento Integral em Infraestrutura e Cybersegurança
 
-*Gerenciamento de estudos e projetos que integram a formação acadêmica do Tecnólogo em Redes de Computadores com um roteiro prático de cursos focados em Infraestrutura, Segurança e Cloud.*
+*Gerenciamento de estudos e projetos que integram a formação acadêmica em Redes de Computadores com um roteiro prático de cursos focados em Infraestrutura, Segurança e Cloud.*
 
 [![GitHub Projects](https://img.shields.io/badge/GitHub-Projects-blue?style=for-the-badge&logo=github)](https://github.com/users/th-hoffmann/projects)
 [![Academic](https://img.shields.io/badge/Academic-Level-green?style=for-the-badge&logo=academicapple)](https://github.com/th-hoffmann)
@@ -12,6 +12,8 @@
 
 ---
 
+<br>
+
 ## 📋 Sobre o Projeto
 
 Este repositório serve como **centro de comando** para meu desenvolvimento profissional em Tecnologia da Informação, integrando:
@@ -19,6 +21,8 @@ Este repositório serve como **centro de comando** para meu desenvolvimento prof
 - 🎯 **Formação Acadêmica**: Tecnólogo em Redes de Computadores (4 semestres - 640h)
 - 📚 **Desenvolvimento Complementar**: Cursos especializados em infraestrutura, segurança e cloud
 - 🚀 **Planejamento de Carreira**: Roteiro estruturado com metas e marcos
+
+<br>
 
 ## 🏗️ Estrutura do Desenvolvimento
 
@@ -36,6 +40,8 @@ graph TD
     
     F --> G[🎯 Objetivos de Carreira]
 ```
+
+<br>
 
 ## 📊 Áreas de Foco
 
@@ -59,6 +65,8 @@ graph TD
 - DevOps e CI/CD
 - Arquiteturas distribuídas
 
+<br>
+
 ## 🎯 Metodologia de Estudos
 
 ### 📅 **Planejamento**
@@ -67,7 +75,7 @@ graph TD
 - [ ] Marcos de avaliação mensal
 
 ### 📚 **Execução**
-- [ ] Sessions de estudo focado (Pomodoro)
+- [ ] Sessões de estudo focado (Pomodoro)
 - [ ] Projetos práticos hands-on
 - [ ] Documentação de aprendizado
 
@@ -75,6 +83,9 @@ graph TD
 - [ ] Métricas de progresso
 - [ ] Feedback e ajustes
 - [ ] Portfólio de projetos
+
+<!--
+<br>
 
 ## 🗂️ Organização do Projeto
 
@@ -102,42 +113,26 @@ graph TD
     ├── 🔗 Links-Uteis/
     └── 📝 Anotacoes/
 ```
+-->
+
+<br>
 
 ## 🎓 Grade Curricular - Tecnólogo em Redes
 
 ### 📚 **1º Semestre** (Agosto - Dezembro 2025) - **440h**
 
-#### 📅 **Cronograma Detalhado**
-
-**🗓️ Agosto 2025** (Prazo: 10/09/2025)
 | Disciplina | Carga Horária | Status |
 |------------|---------------|---------|
 | 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/Progress-83%25-green) |
 | 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/Progress-17%25-orange) |
-
-**🗓️ Setembro 2025**
-| Disciplina | Carga Horária | Status |
-|------------|---------------|---------|
-| 🖥️ **Redes de Computadores Remotas** | 80h | ![Status](https://img.shields.io/badge/Status-Aguardando-yellow) |
-
-**🗓️ Outubro 2025**
-| Disciplina | Carga Horária | Status |
-|------------|---------------|---------|
-| 📊 **Cabeamento Estruturado** | 60h | ![Status](https://img.shields.io/badge/Status-Aguardando-yellow) |
-
-**🗓️ Novembro 2025**
-| Disciplina | Carga Horária | Status |
-|------------|---------------|---------|
-| 🔄 **Tecnologias de Roteamento** | 80h | ![Status](https://img.shields.io/badge/Status-Aguardando-yellow) |
-
-**🗓️ Agosto - Dezembro 2025** (Disciplinas Complementares)
-| Disciplina | Carga Horária | Status |
-|------------|---------------|---------|
 | 🌍 **Ambientação Digital** | 20h | ![Status](https://img.shields.io/badge/Status-Concluída-brightgreen) |
-| 🐧 **Sistema Linux** | 60h | ![Status](https://img.shields.io/badge/Status-Não_Iniciado-red) |
 | 📋 **Plano de Acompanhamento de Carreira I** | 10h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
 | 🤝 **Atividades de Extensão** | 50h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
-| 📝 **Avaliação Integrada I** | 0h | ![Status](https://img.shields.io/badge/Status-Não_Disponível-gray) |
+| 🖥️ **Redes de Computadores Remotas** | 80h | ![Status](https://img.shields.io/badge/Status-Setembro-yellow) |
+| 📊 **Cabeamento Estruturado** | 60h | ![Status](https://img.shields.io/badge/Status-Outubro-yellow) |
+| 🔄 **Tecnologias de Roteamento** | 80h | ![Status](https://img.shields.io/badge/Status-Novembro-yellow) |
+| 🐧 **Sistema Linux** | 60h | ![Status](https://img.shields.io/badge/Status-Dezembro-yellow) |
+| 📝 **Avaliação Integrada I** | 0h | ![Status](https://img.shields.io/badge/Status-Dezembro-yellow) |
 
 ### 📚 **2º Semestre** (2026) - **400h**
 | Disciplina | Carga Horária |
@@ -169,6 +164,8 @@ graph TD
 | ⚙️ Sistemas Operacionais | 60h |
 | 🔧 Princípios de Administração e Marketing | 40h |
 
+<br>
+
 ## 📊 Status Detalhado - Disciplinas em Andamento
 
 ### 🌐 **Tecnologia de Redes** (83% concluído)
@@ -195,6 +192,16 @@ graph TD
 - Módulo 5: Função Quadrática
 - Módulo 6: Matrizes e Sistemas Lineares
 
+### 📋 **Plano de Acompanhamento de Carreira I** (Em andamento)
+🟡 **Status:**
+- Atividade contínua durante todo o semestre
+
+### 🤝 **Atividades de Extensão** (Em andamento)
+🟡 **Status:**
+- 50h distribuídas ao longo do semestre
+
+<br>
+
 ## 🏆 Marcos e Conquistas
 
 ### 🎓 **2025 - Fundação**
@@ -205,17 +212,20 @@ graph TD
 - [ ] **Meta**: Concluir primeiro ciclo até 10/09/2025
 - [ ] Primeira certificação cloud
 
-### 🚀 **2026 - Desenvolvimento**
-- [ ] Conclusão do 1º semestre
-- [ ] Início das disciplinas de infraestrutura e segurança
-- [ ] Projeto de TCC definido
-- [ ] Experiência prática em redes/infraestrutura
-- [ ] Certificações intermediárias
+### 🚀 **2026 - Aceleração Profissional**
+- [ ] Conclusão do 1º e 2º semestre
+- [ ] 5 certificações entry-level (CCST, ISC2 CC, LPIC-1)
+- [ ] **🎯 META ANTECIPADA: Primeiro emprego júnior (Jun/2026)**
+- [ ] Portfolio técnico sólido
+- [ ] Networking profissional ativo
 
-### 💼 **2027 - Consolidação**
+### 💼 **2027 - Consolidação e Crescimento**
 - [ ] Conclusão do tecnólogo (4 semestres)
-- [ ] Primeira posição júnior na área
-- [ ] Portfolio técnico robusto
+- [ ] Certificação CCNA (networking avançado)
+- [ ] Crescimento na posição júnior
+- [ ] Preparação para nível pleno
+
+<br>
 
 ## 📊 Dashboard de Progresso Atual
 
@@ -224,10 +234,15 @@ graph TD
 | 🌐 **Tecnologia de Redes** | ![Progress](https://img.shields.io/badge/Progress-83%25-green) | 🟢 Avançado | Módulo 6 (10/09) |
 | 📐 **Matemática Aplicada** | ![Progress](https://img.shields.io/badge/Progress-17%25-orange) | 🟡 Iniciando | Módulo 2 (10/09) |
 | 🌍 **Ambientação Digital** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
-| 🖥️ **Redes Remotas** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Setembro 2025 |
-| 📊 **Cabeamento** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Outubro 2025 |
-| 🔄 **Roteamento** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Novembro 2025 |
-| 🐧 **Sistema Linux** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Não Iniciado | Definir período |
+| � **Plano de Acompanhamento de Carreira I** | ![Progress](https://img.shields.io/badge/Progress-50%25-yellow) | 🟡 Em Andamento | Contínuo |
+| 🤝 **Atividades de Extensão** | ![Progress](https://img.shields.io/badge/Progress-30%25-orange) | 🟡 Em Andamento | Contínuo |
+| �🖥️ **Redes de Computadores Remotas** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Setembro 2025 |
+| 📊 **Cabeamento Estruturado** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Outubro 2025 |
+| 🔄 **Tecnologias de Roteamento** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Novembro 2025 |
+| 🐧 **Sistema Linux** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |
+| 📝 **Avaliação Integrada I** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |
+
+<br>
 
 ## ⏰ Próximos Deadlines
 
@@ -238,6 +253,8 @@ graph TD
 | **31/10/2025** | 📝 Início Outubro | Cabeamento Estruturado |
 | **30/11/2025** | 📝 Início Novembro | Tecnologias de Roteamento |
 | **31/12/2025** | 🏆 **Conclusão 1º Semestre** | Todas as disciplinas do semestre |
+
+<br>
 
 ## 🛠️ Ferramentas e Tecnologias
 
@@ -276,18 +293,22 @@ graph TD
 - **Matemática**: "Matemática Discreta para Computação" - J. Gersting
 
 ### 🎯 **Certificações Alvo**
-- [ ] **CompTIA Network+** - Fundamentos de redes
-- [ ] **AWS Cloud Practitioner** - Introdução à nuvem
-- [ ] **CompTIA Security+** - Fundamentos de segurança
-- [ ] **CCNA** - Cisco networking
-- [ ] **Linux Professional Institute (LPIC-1)**
+- [ ] **Cisco CCST Networking** - Fundamentos de redes Cisco
+- [ ] **Cisco CCST Cybersecurity** - Segurança básica
+- [ ] **ISC2 CC** - Certified in Cybersecurity
+- [ ] **Linux LPIC-1** - Administração Linux
+- [ ] **AWS Cloud Practitioner** - Introdução à nuvem AWS  
+- [ ] **Azure Fundamentals AZ-900** - Fundamentos Microsoft Azure
+- [ ] **Cisco CCNA** - Networking profissional
 
+<!--
 ### 🔗 **Links Úteis**
 - [Packet Tracer - Simulador Cisco](https://www.netacad.com/courses/packet-tracer)
 - [GNS3 - Simulador de Redes](https://www.gns3.com/)
 - [AWS Free Tier](https://aws.amazon.com/free/)
 - [Linux Journey](https://linuxjourney.com/)
 - [Khan Academy - Matemática](https://pt.khanacademy.org/math)
+-->
 
 ## 📞 Contato e Networking
 
@@ -305,9 +326,10 @@ graph TD
 
 ### 💡 *"A educação é a arma mais poderosa que você pode usar para mudar o mundo."* - Nelson Mandela
 
-**🚀 Transformando conhecimento em oportunidades | 📈 Crescimento contínuo em TI**
+**🚀 Transformando conhecimento em oportunidades | 📈 Crescimento acelerado em TI**
   
 **⏰ Próximo Marco: 10/09/2025 - Conclusão do primeiro ciclo**
+**🎯 Meta Ambiciosa: Jun/2026 - Primeiro emprego júnior**
 
 </div>
 

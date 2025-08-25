@@ -1,0 +1,59 @@
+name: 📊 Atualização Diária de Progresso
+
+"on":
+  schedule:
+    - cron: '0 9 * * *'  # Diário às 09:00 UTC (06:00 BRT)
+  workflow_dispatch:
+
+jobs:
+  daily-update:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
+          
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y jq bc
+          
+      - name: Generate daily report and update dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🚀 Iniciando automação diária..."
+          
+          # Gerar relatório diário
+          echo "📝 Gerando relatório diário..."
+          chmod +x scripts/weekly-report.sh
+          ./scripts/weekly-report.sh
+          
+          # Atualizar dashboard com métricas reais
+          echo "📊 Atualizando dashboard com métricas das issues..."
+          chmod +x scripts/dashboard-updater.sh
+          ./scripts/dashboard-updater.sh
+          
+          echo "✅ Automação concluída!"
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "🤖 GitHub Action Bot"
+          git add .
+          
+          if git diff --staged --quiet; then
+            echo "ℹ️ Nenhuma mudança para commit"
+          else
+            echo "💾 Commitando mudanças..."
+            git commit -m "🤖 Atualização automática diária - Dashboard e métricas atualizados"
+            git push
+            echo "✅ Mudanças commitadas e enviadas!"
+          fi

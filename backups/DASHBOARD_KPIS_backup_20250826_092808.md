@@ -4,7 +4,7 @@
 
 | **Área** | **Progresso** | **Status** | **Próximo Milestone** |
 |----------|--------------|------------|----------------------|
-| 📚 **Progresso Acadêmico** | ![Progress](https://img.shields.io/badge/16%25-red) | 🚨 Crítico |
+| 📚 **Progresso Acadêmico** | ![Progress](https://img.shields.io/badge/16%25-red) | 🚨 Crítico | Aumentar ritmo de estudos |
 | 🏆 **Certificações** | ![Progress](https://img.shields.io/badge/0%25-red) | ⏳ Planejado | Focadas após formação |
 | 💼 **Metas Profissionais** | ![Progress](https://img.shields.io/badge/0%25-gray) | 📋 Preparação | Primeiro emprego Jun/26 |
 
@@ -23,15 +23,15 @@
 
 | **Disciplina** | **Carga** | **Progresso** | **Prazo** | **Status** |
 |----------------|-----------|---------------|-----------|-------------|
-| 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/83%25-green) |
-| 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/17%25-red) |
+| 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/83%25-green) | 10/09/2025 | 🟢 Em Andamento |
+| 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/17%25-red) | 10/09/2025 | 🚨 Crítico |
 | 🌍 **Ambientação Digital** | 20h | ![Progress](https://img.shields.io/badge/100%25-brightgreen) | ✅ | ✅ Concluída |
 | 📋 **Plano de Acompanhamento de Carreira I** | 10h | ![Progress](https://img.shields.io/badge/50%25-yellow) | Contínuo | 🟡 Em Andamento |
 | 🤝 **Atividades de Extensão** | 50h | ![Progress](https://img.shields.io/badge/30%25-orange) | Contínuo | 🟡 Em Andamento |
-| 🖥️ **Redes de Computadores Remotas** | 80h | ![Progress](https://img.shields.io/badge/0%25-red) |
-| 📊 **Cabeamento Estruturado** | 60h | ![Progress](https://img.shields.io/badge/0%25-red) |
-| 🔄 **Tecnologias de Roteamento** | 80h | ![Progress](https://img.shields.io/badge/0%25-red) |
-| 🐧 **Sistema Linux** | 60h | ![Progress](https://img.shields.io/badge/0%25-red) |
+| 🖥️ **Redes de Computadores Remotas** | 80h | ![Progress](https://img.shields.io/badge/0%25-red) | Setembro | Aguardando |
+| 📊 **Cabeamento Estruturado** | 60h | ![Progress](https://img.shields.io/badge/0%25-red) | Outubro | Aguardando |
+| 🔄 **Tecnologias de Roteamento** | 80h | ![Progress](https://img.shields.io/badge/0%25-red) | Novembro | Aguardando |
+| 🐧 **Sistema Linux** | 60h | ![Progress](https://img.shields.io/badge/0%25-red) | Novembro | Aguardando |
 | 📝 **Avaliação Integrada I** | 0h | ![Progress](https://img.shields.io/badge/0%25-gray) | Dez/25 | ⏸️ Pendente |
 
 ### 📈 **Métricas de Estudo**

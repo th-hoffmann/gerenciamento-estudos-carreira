@@ -12,7 +12,7 @@
 
 ---
 
-<br>
+&nbsp;
 
 ## 📋 Sobre o Projeto
 
@@ -22,7 +22,7 @@ Este repositório serve como **centro de comando** para meu desenvolvimento prof
 - 📚 **Desenvolvimento Complementar**: Cursos especializados em infraestrutura, segurança e cloud
 - 🚀 **Planejamento de Carreira**: Roteiro estruturado com metas e marcos
 
-<br>
+&nbsp;
 
 ## 🏗️ Estrutura do Desenvolvimento
 
@@ -41,51 +41,58 @@ graph TD
     F --> G[🎯 Objetivos de Carreira]
 ```
 
-<br>
+&nbsp;
 
 ## 📊 Áreas de Foco
 
 ### 🎓 **Acadêmico**
+
 - Disciplinas do curso de Tecnólogo em Redes de Computadores
 - Projetos acadêmicos e trabalhos de conclusão
 - Atividades complementares e networking acadêmico
 
 ### 🛠️ **Infraestrutura**
+
 - Administração de sistemas Linux/Windows
 - Virtualização e containers
 - Monitoramento e automação
 
 ### 🔐 **Segurança**
+
 - Segurança de redes e sistemas
 - Ethical hacking e pentest
 - Compliance e governança
 
 ### ☁️ **Cloud Computing**
+
 - AWS, Azure, Google Cloud
 - DevOps e CI/CD
 - Arquiteturas distribuídas
 
-<br>
+&nbsp;
 
 ## 🎯 Metodologia de Estudos
 
 ### 📅 **Planejamento**
+
 - [ ] Definição de objetivos SMART por área
 - [ ] Cronograma semestral integrado
 - [ ] Marcos de avaliação mensal
 
 ### 📚 **Execução**
+
 - [ ] Sessões de estudo focado (Pomodoro)
 - [ ] Projetos práticos hands-on
 - [ ] Documentação de aprendizado
 
 ### 📈 **Acompanhamento**
+
 - [ ] Métricas de progresso
 - [ ] Feedback e ajustes
 - [ ] Portfólio de projetos
 
 <!--
-<br>
+&nbsp;
 
 ## 🗂️ Organização do Projeto
 
@@ -115,7 +122,7 @@ graph TD
 ```
 -->
 
-<br>
+&nbsp;
 
 ## 🎓 Grade Curricular - Tecnólogo em Redes
 
@@ -135,6 +142,7 @@ graph TD
 | 📝 **Avaliação Integrada I** | 0h | ![Status](https://img.shields.io/badge/Status-Dezembro-yellow) |
 
 ### 📚 **2º Semestre** (2026) - **400h**
+
 | Disciplina | Carga Horária |
 |------------|---------------|
 | 🏗️ Infraestrutura de Tecnologia da Informação | 40h |
@@ -145,6 +153,7 @@ graph TD
 | 🌍 Diversidade Étnico-Cultural | 60h |
 
 ### 📚 **3º Semestre** (2026) - **400h**
+
 | Disciplina | Carga Horária |
 |------------|---------------|
 | 💼 Empreendedorismo | 40h |
@@ -155,6 +164,7 @@ graph TD
 | 🔗 Conectividade de Redes | 80h |
 
 ### 📚 **4º Semestre** (2027) - **400h**
+
 | Disciplina | Carga Horária |
 |------------|---------------|
 | 🇧🇷 Língua Portuguesa | 40h |
@@ -164,28 +174,35 @@ graph TD
 | ⚙️ Sistemas Operacionais | 60h |
 | 🔧 Princípios de Administração e Marketing | 40h |
 
-<br>
+&nbsp;
 
 ## 📊 Status Detalhado - Disciplinas em Andamento
 
 ### 🌐 **Tecnologia de Redes** (83% concluído)
+
 ✅ **Módulos Concluídos:**
+
 - Módulo 1: Tipos de Redes e Sistema Operacional de Rede
 - Módulo 2: Protocolos, Padrões e Acesso a Rede
 - Módulo 3: Rede Ethernet
 - Módulo 4: Camada de Rede e Endereçamento IP
 
 🟡 **Em Andamento:**
+
 - Módulo 5: Sub-Redes e Camada de Transporte
 
 ⏳ **Próximo:**
+
 - Módulo 6: Camada de Aplicação e Desenho Básico de Rede
 
 ### 📐 **Matemática Aplicada** (17% concluído)
+
 🟡 **Em Andamento:**
+
 - Módulo 1: Conjuntos e Intervalos Reais
 
 ⏳ **Próximos:**
+
 - Módulo 2: Conjuntos Numéricos e Operações
 - Módulo 3: Relações Binárias e Funções
 - Módulo 4: Função Afim
@@ -193,18 +210,23 @@ graph TD
 - Módulo 6: Matrizes e Sistemas Lineares
 
 ### 📋 **Plano de Acompanhamento de Carreira I** (Em andamento)
+
 🟡 **Status:**
+
 - Atividade contínua durante todo o semestre
 
 ### 🤝 **Atividades de Extensão** (Em andamento)
+
 🟡 **Status:**
+
 - 50h distribuídas ao longo do semestre
 
-<br>
+&nbsp;
 
 ## 🏆 Marcos e Conquistas
 
 ### 🎓 **2025 - Fundação**
+
 - [x] Início do curso de Tecnólogo em Redes (01/08/2025)
 - [x] Setup do ambiente de estudos
 - [x] **Ambientação Digital** - Concluída
@@ -213,6 +235,7 @@ graph TD
 - [ ] Primeira certificação cloud
 
 ### 🚀 **2026 - Aceleração Profissional**
+
 - [ ] Conclusão do 1º e 2º semestre
 - [ ] 5 certificações entry-level (CCST, ISC2 CC, LPIC-1)
 - [ ] **🎯 META ANTECIPADA: Primeiro emprego júnior (Jun/2026)**
@@ -220,12 +243,13 @@ graph TD
 - [ ] Networking profissional ativo
 
 ### 💼 **2027 - Consolidação e Crescimento**
+
 - [ ] Conclusão do tecnólogo (4 semestres)
 - [ ] Certificação CCNA (networking avançado)
 - [ ] Crescimento na posição júnior
 - [ ] Preparação para nível pleno
 
-<br>
+&nbsp;
 
 ## 📊 Dashboard de Progresso Atual
 
@@ -242,7 +266,7 @@ graph TD
 | 🐧 **Sistema Linux** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |
 | 📝 **Avaliação Integrada I** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |
 
-<br>
+&nbsp;
 
 ## ⏰ Próximos Deadlines
 
@@ -254,30 +278,34 @@ graph TD
 | **30/11/2025** | 📝 Início Novembro | Tecnologias de Roteamento |
 | **31/12/2025** | 🏆 **Conclusão 1º Semestre** | Todas as disciplinas do semestre |
 
-<br>
+&nbsp;
 
 ## 🛠️ Ferramentas e Tecnologias
 
 <div align="center">
 
 ### 💻 **Sistemas e Infraestrutura**
+
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Windows Server](https://img.shields.io/badge/-Windows%20Server-0078D4?style=flat-square&logo=windows&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![VMware](https://img.shields.io/badge/-VMware-607078?style=flat-square&logo=vmware&logoColor=white)
 
 ### 🌐 **Redes e Protocolos**
+
 ![Cisco](https://img.shields.io/badge/-Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/-Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 ![TCP/IP](https://img.shields.io/badge/-TCP%2FIP-4682B4?style=flat-square&logo=network&logoColor=white)
 ![Ethernet](https://img.shields.io/badge/-Ethernet-FF6B35?style=flat-square&logo=ethernet&logoColor=white)
 
 ### ☁️ **Cloud Platforms**
+
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/-Azure-0089D0?style=flat-square&logo=microsoft-azure&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
 
 ### 🔐 **Segurança**
+
 ![Nmap](https://img.shields.io/badge/-Nmap-4682B4?style=flat-square&logo=nmap&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/-Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
 
@@ -286,6 +314,7 @@ graph TD
 ## 📚 Recursos de Estudo
 
 ### 📖 **Bibliografia Essencial**
+
 - **Redes**: "Redes de Computadores" - Andrew Tanenbaum
 - **Segurança**: "Segurança de Computadores" - William Stallings
 - **Cloud**: "AWS Certified Solutions Architect" - Official Study Guide
@@ -293,6 +322,7 @@ graph TD
 - **Matemática**: "Matemática Discreta para Computação" - J. Gersting
 
 ### 🎯 **Certificações Alvo**
+
 - [ ] **Cisco CCST Networking** - Fundamentos de redes Cisco
 - [ ] **Cisco CCST Cybersecurity** - Segurança básica
 - [ ] **ISC2 CC** - Certified in Cybersecurity
@@ -326,10 +356,11 @@ graph TD
 
 ### 💡 *"A educação é a arma mais poderosa que você pode usar para mudar o mundo."* - Nelson Mandela
 
-**🚀 Transformando conhecimento em oportunidades | 📈 Crescimento acelerado em TI**
+#### 🚀 Transformando conhecimento em oportunidades | 📈 Crescimento acelerado em TI**
   
-**⏰ Próximo Marco: 10/09/2025 - Conclusão do primeiro ciclo**
-**🎯 Meta Ambiciosa: Jun/2026 - Primeiro emprego júnior**
+#### ⏰ Próximo Marco: 10/09/2025 - Conclusão do primeiro ciclo**
+
+#### 🎯 Meta Ambiciosa: Jun/2026 - Primeiro emprego júnior**
 
 </div>
 

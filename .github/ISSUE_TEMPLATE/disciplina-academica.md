@@ -8,27 +8,30 @@ assignees: ''
 
 ## 📋 Informações da Disciplina
 
-- **Nome**: 
-- **Carga Horária**: 
-- **Semestre**: 
-- **Período**: 
+- **Nome**:  
+- **Carga Horária**:  
+- **Semestre**:  
+- **Período**:  
 - **Modalidade**: [ ] Presencial [ ] EAD [ ] Híbrido
 
 ## 🎯 Objetivos da Disciplina
 
-### Competências a Desenvolver:
-- [ ] 
-- [ ] 
-- [ ] 
+### Competências a Desenvolver
 
-### Conhecimentos Técnicos:
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ]  
+- [ ]  
+- [ ]  
+
+### Conhecimentos Técnicos
+
+- [ ]  
+- [ ]  
+- [ ]  
 
 ## 📅 Cronograma de Estudos
 
-### Módulos/Unidades:
+### Módulos/Unidades
+
 - [ ] **Módulo 1**: Nome - Data prevista
 - [ ] **Módulo 2**: Nome - Data prevista  
 - [ ] **Módulo 3**: Nome - Data prevista
@@ -36,7 +39,8 @@ assignees: ''
 - [ ] **Módulo 5**: Nome - Data prevista
 - [ ] **Módulo 6**: Nome - Data prevista
 
-### Avaliações:
+### Avaliações
+
 - [ ] **Prova 1**: Data - Peso
 - [ ] **Prova 2**: Data - Peso
 - [ ] **Trabalhos**: Peso
@@ -46,32 +50,32 @@ assignees: ''
 
 **Progresso Atual**: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 
-### Status por Módulo:
+### Status por Módulo
+
 - [ ] Módulo 1 - ⏳ Pendente 🟢 Em Progresso ✅ Concluído
 - [ ] Módulo 2 - ⏳ Pendente 🟢 Em Progresso ✅ Concluído
 - [ ] Módulo 3 - ⏳ Pendente 🟢 Em Progresso ✅ Concluído
 
 ## 📚 Recursos de Estudo
 
-### Material Obrigatório:
-- [ ] Livro texto: 
-- [ ] Artigos/Papers: 
+### Material Obrigatório
 
-### Material Complementar:
+- [ ] Livro texto:  
+- [ ] Artigos/Papers:  
+
+### Material Complementar
+
 - [ ] Vídeos/Cursos online:
 - [ ] Documentação técnica:
 - [ ] Tutoriais práticos:
 
 ## 📝 Anotações e Observações
 
-### Conceitos Principais:
+### Conceitos Principais
 
+### Dúvidas/Dificuldades
 
-### Dúvidas/Dificuldades:
-
-
-### Links Úteis:
-
+### Links Úteis
 
 ## ✅ Critérios de Conclusão
 

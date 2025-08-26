@@ -8,38 +8,42 @@ assignees: ''
 
 ## 🏆 Informações da Certificação
 
-- **Nome Completo**: 
-- **Fornecedor**: 
-- **Código**: 
+- **Nome Completo**:  
+- **Fornecedor**:  
+- **Código**:  
 - **Nível**: [ ] Foundation [ ] Associate [ ] Professional [ ] Expert
-- **Validade**: 
-- **Custo Estimado**: R$ 
+- **Validade**:  
+- **Custo Estimado**: R$  
 
 ## 🎯 Objetivo e Relevância
 
 ### Por que esta certificação?
+
 - [ ] Requisito para vaga específica
 - [ ] Evolução natural da carreira
 - [ ] Validação de conhecimento
 - [ ] Diferencial competitivo
 - [ ] Interesse pessoal/técnico
 
-### Áreas de Conhecimento Cobertas:
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+### Áreas de Conhecimento Cobertas
+
+- [ ]  
+- [ ]  
+- [ ]  
+- [ ]  
 
 ## 📚 Plano de Estudos
 
-### Recursos Principais:
-- [ ] **Curso oficial**: 
-- [ ] **Documentação**: 
-- [ ] **Livros**: 
-- [ ] **Prática hands-on**: 
-- [ ] **Simulados**: 
+### Recursos Principais
 
-### Cronograma:
+- [ ] **Curso oficial**:  
+- [ ] **Documentação**:  
+- [ ] **Livros**:  
+- [ ] **Prática hands-on**:  
+- [ ] **Simulados**:  
+
+### Cronograma
+
 - [ ] **Semana 1-2**: Fundamentos teóricos
 - [ ] **Semana 3-4**: Prática guiada  
 - [ ] **Semana 5-6**: Laboratórios hands-on
@@ -51,42 +55,47 @@ assignees: ''
 
 **Progresso Geral**: ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 
-### Domínios de Conhecimento:
+### Domínios de Conhecimento
+
 - [ ] **Domínio 1** (X%): ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 - [ ] **Domínio 2** (X%): ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 - [ ] **Domínio 3** (X%): ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 - [ ] **Domínio 4** (X%): ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 0%
 
-### Simulados Realizados:
+### Simulados Realizados
+
 - [ ] **Simulado 1**: Pontuação - Data
 - [ ] **Simulado 2**: Pontuação - Data
 - [ ] **Simulado 3**: Pontuação - Data
 
 ## 💻 Laboratórios e Prática
 
-### Ambiente de Laboratório:
+### Ambiente de Laboratório
+
 - [ ] AWS Free Tier configurado
 - [ ] Azure Student/Trial
 - [ ] Google Cloud Free Credits
 - [ ] Laboratório local (VMs)
 - [ ] Cloud playground/sandbox
 
-### Exercícios Práticos:
-- [ ] Lab 1: 
-- [ ] Lab 2: 
-- [ ] Lab 3: 
-- [ ] Lab 4: 
-- [ ] Lab 5: 
+### Exercícios Práticos
+
+- [ ] Lab 1:  
+- [ ] Lab 2:  
+- [ ] Lab 3:  
+- [ ] Lab 4:  
+- [ ] Lab 5:  
 
 ## 📅 Cronograma de Exame
 
 - **Data Pretendida**: DD/MM/YYYY
 - **Local/Modalidade**: [ ] Presencial [ ] Online
-- **Tentativas Disponíveis**: 
-- **Tempo de Exame**: 
-- **Pontuação Mínima**: 
+- **Tentativas Disponíveis**:  
+- **Tempo de Exame**:  
+- **Pontuação Mínima**:  
 
-### Pré-Exame Checklist:
+### Pré-Exame Checklist
+
 - [ ] Todos os domínios estudados
 - [ ] Simulados com pontuação satisfatória (>80%)
 - [ ] Ambiente de prática testado
@@ -95,27 +104,23 @@ assignees: ''
 
 ## 📝 Notas de Estudo
 
-### Conceitos Importantes:
+### Conceitos Importantes
 
+### Pegadinhas Comuns
 
-### Pegadinhas Comuns:
+### Comandos/Códigos Essenciais
 
-
-### Comandos/Códigos Essenciais:
-
-
-### Links de Referência:
-
+### Links de Referência
 
 ## 💰 Investimento e ROI
 
-- **Custo Total**: R$ 
+- **Custo Total**: R$  
   - Exame: R$
   - Material de estudo: R$
   - Laboratórios: R$
-- **ROI Esperado**: 
-- **Impacto salarial**: 
-- **Oportunidades**: 
+- **ROI Esperado**:  
+- **Impacto salarial**:  
+- **Oportunidades**:  
 
 ---
 

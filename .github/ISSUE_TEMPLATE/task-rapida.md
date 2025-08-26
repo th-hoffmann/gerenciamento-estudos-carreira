@@ -9,9 +9,11 @@ assignees: ''
 ## 📝 Descrição da Tarefa
 
 ### O que precisa ser feito?
+
 Descreva de forma clara e objetiva a tarefa.
 
-### Contexto:
+### Contexto
+
 - **Relacionada a**: [ ] Disciplina [ ] Projeto [ ] Certificação [ ] Meta [ ] Manutenção
 - **Urgência**: [ ] Alta [ ] Média [ ] Baixa  
 - **Complexidade**: [ ] Simples (< 2h) [ ] Média (2-8h) [ ] Complexa (> 8h)
@@ -24,9 +26,9 @@ Descreva de forma clara e objetiva a tarefa.
 
 ## 🔗 Links e Recursos
 
-- **Documentação**: 
-- **Referências**: 
-- **Dependências**: 
+- **Documentação**:  
+- **Referências**:  
+- **Dependências**:  
 
 ## 📅 Prazo
 

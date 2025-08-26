@@ -9,22 +9,86 @@
 # ╚═════════════════════════════════════════════════════════════════════════════╝
 # 
 #   📄 Descrição.....: Atualiza o DASHBOARD_KPIS.md com métricas reais extraídas
-#    das issues do GitHub, integrando com o weekly-report.sh
+#    das issues do GitHub, integrando com o weekly-report.sh. Inclui sistema
+#    automatizado de backup com política de retenção de 7 arquivos.
 #
 #   👨‍💻 Desenvolvedor.: Thiago Hoffmann
-#   📅 Data..........: 25/08/2025
-#   🏷️  Versão.......: 1.0.0
-# 
+#   📮 Contato.......: thiago@hoffmann.tec.br
+#   🔗 GitHub........: https://github.com/th-hoffmann
+#   🌐 LinkedIn......: https://linkedin.com/in/th-hoffmann87
+#
+#   📅 Data..........: 26/08/2025
+#   🏷️  Versão.......: 1.1.1
+#   
+#   🔧 Melhorias v1.1.1:
+#   - ✅ Correções de boas práticas: declaração separada de variáveis
+#   - ✅ Melhor tratamento de erros e robustez do código
+#   - ✅ Conformidade total com shellcheck (zero warnings)
+#   
+#   🔧 Melhorias v1.1.0:
+#   - ✅ Sistema de backup automatizado no diretório 'backups/'
+#   - ✅ Política de retenção: máximo 7 backups (1 semana)
+#   - ✅ Nomenclatura com timestamp: YYYYMMDD_HHMMSS
+#   - ✅ Limpeza automática dos backups mais antigos
+#
+#
+# ╔═════════════════════════════════════════════════════════════════════════════╗
+# ║ 🚀 MODO DE USO
+# ╚═════════════════════════════════════════════════════════════════════════════╝
+#
+#   Executar:    ./dashboard-updater.sh
+#
+#
 # ═══════════════════════════════════════════════════════════════════════════════
 
 set -e
 
 DASHBOARD_FILE="DASHBOARD_KPIS.md"
-BACKUP_FILE="DASHBOARD_KPIS.md.backup"
+BACKUP_DIR="backups"
+BACKUP_FILE="${BACKUP_DIR}/DASHBOARD_KPIS_backup_$(date '+%Y%m%d_%H%M%S').md"
+MAX_BACKUPS=7
 
 echo "🔄 Iniciando atualização integrada do dashboard..."
 
-# Backup do arquivo original
+# Criar diretório de backup se não existir
+mkdir -p "$BACKUP_DIR"
+
+# Função para gerenciar política de backups
+manage_backup_policy() {
+    local backup_dir="$1"
+    local max_backups="$2"
+    local file_pattern="DASHBOARD_KPIS_backup_*.md"
+    
+    echo "🗂️  Aplicando política de backups (máximo: $max_backups arquivos)..."
+    
+    # Contar arquivos de backup existentes
+    local backup_count
+    backup_count=$(find "$backup_dir" -name "$file_pattern" -type f 2>/dev/null | wc -l)
+    
+    if [ "$backup_count" -ge "$max_backups" ]; then
+        # Calcular quantos arquivos excedentes existem
+        local excess_files=$((backup_count - max_backups + 1))
+        
+        echo "📁 Encontrados $backup_count backups. Removendo os $excess_files mais antigos..."
+        
+        # Remover os arquivos mais antigos
+        find "$backup_dir" -name "$file_pattern" -type f -printf '%T@ %p\n' | \
+        sort -n | \
+        head -n "$excess_files" | \
+        cut -d' ' -f2- | \
+        while read -r old_backup; do
+            echo "🗑️  Removendo backup antigo: $(basename "$old_backup")"
+            rm -f "$old_backup"
+        done
+    else
+        echo "📂 Backups atuais: $backup_count (dentro do limite de $max_backups)"
+    fi
+}
+
+# Aplicar política de backups antes de criar novo backup
+manage_backup_policy "$BACKUP_DIR" "$MAX_BACKUPS"
+
+# Backup do arquivo original com timestamp
 cp "$DASHBOARD_FILE" "$BACKUP_FILE"
 echo "💾 Backup criado: $BACKUP_FILE"
 
@@ -66,10 +130,12 @@ get_issue_progress() {
     echo "📊 Extraindo progresso da Issue #$issue_number..." >&2
     
     # Obter corpo da issue
-    local issue_body=$(gh issue view $issue_number --json body | jq -r '.body')
+    local issue_body
+    issue_body=$(gh issue view $issue_number --json body | jq -r '.body')
     
     # Extrair progresso (buscar padrões como **Progresso Atual**: ██░░░░░░░░ 17%)
-    local progress=$(echo "$issue_body" | grep "Progresso Atual" | grep -o "[0-9]\+%" | head -1 | tr -d '%')
+    local progress
+    progress=$(echo "$issue_body" | grep "Progresso Atual" | grep -o "[0-9]\+%" | head -1 | tr -d '%')
     
     # Se não encontrou, buscar por padrões alternativos
     if [ -z "$progress" ]; then
@@ -83,8 +149,10 @@ get_issue_progress() {
 update_dashboard_badge() {
     local area_name="$1"
     local progress="$2"
-    local color=$(get_badge_color $progress)
-    local status=$(get_status_text $progress)
+    local color
+    color=$(get_badge_color $progress)
+    local status
+    status=$(get_status_text $progress)
     
     echo "🔄 Atualizando badge: $area_name ($progress%)"
     
@@ -98,8 +166,10 @@ update_discipline() {
     local discipline_name="$2"
     local hours="$3"
     
-    local progress=$(get_issue_progress $issue_num)
-    local color=$(get_badge_color $progress)
+    local progress
+    progress=$(get_issue_progress $issue_num)
+    local color
+    color=$(get_badge_color $progress)
     
     echo "📚 Atualizando disciplina: $discipline_name ($progress%)"
     
@@ -142,7 +212,8 @@ perl -i -pe "s/📚 \*\*Progresso Acadêmico\*\*.*$/📚 \*\*Progresso Acadêmic
 # Atualizar timestamp
 CURRENT_DATE=$(date '+%d de %B de %Y')
 sed -i "s/Última atualização: .*/Última atualização: $CURRENT_DATE/g" README.md
-sed -i "s/Próxima revisão: .*/Próxima revisão: $(date -d '+7 days' '+%d\/%m\/%Y')/g" "$DASHBOARD_FILE"
+# Atualizar próxima data de atualização
+sed -i "s/\*\*📅 Próxima atualização\*\*: .*/\*\*📅 Próxima atualização\*\*: $(date -d '+1 day' '+%d\/%m\/%Y')/g" "$DASHBOARD_FILE"
 
 echo "✅ Dashboard atualizado com sucesso!"
 echo "📁 Backup salvo em: $BACKUP_FILE" 

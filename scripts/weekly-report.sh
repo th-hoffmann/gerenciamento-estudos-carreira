@@ -17,9 +17,15 @@
 #   🔗 GitHub........: https://github.com/th-hoffmann
 #   🌐 LinkedIn......: https://linkedin.com/in/th-hoffmann87
 #   
-#   📅 Data..........: 20/07/2025
-#   🏷️  Versão.......: 1.0.0
+#   📅 Data..........: 26/08/2025
+#   🏷️  Versão.......: 1.0.1
+#   
+#   🔧 Melhorias v1.0.1:
+#   - ✅ Correções de boas práticas: conformidade com shellcheck
+#   - ✅ Código mais limpo e de melhor manutenção 
+#   - ✅ Variáveis não utilizadas removidas/comentadas
 # 
+#
 # ╔═════════════════════════════════════════════════════════════════════════════╗
 # ║ 🚀 MODO DE USO
 # ╚═════════════════════════════════════════════════════════════════════════════╝
@@ -32,8 +38,8 @@
 set -e
 
 # Configurações
-REPO_OWNER="th-hoffmann"
-REPO_NAME="carreira-infra-security"
+# REPO_OWNER="th-hoffmann"        # Reservado para funcionalidades futuras
+# REPO_NAME="carreira-infra-security"  # Reservado para funcionalidades futuras
 DATE=$(date '+%d/%m/%Y')
 WEEK_START=$(date -d 'monday-7 days' '+%Y-%m-%d')
 WEEK_END=$(date -d 'sunday-7 days' '+%Y-%m-%d')

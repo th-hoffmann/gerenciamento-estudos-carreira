@@ -164,7 +164,7 @@ update_dashboard_badge() {
 update_discipline() {
     local issue_num="$1"
     local discipline_name="$2"
-    local hours="$3"
+    # local hours="$3"  # Não utilizado pois preservamos a estrutura original
     
     local progress
     progress=$(get_issue_progress $issue_num)
@@ -174,18 +174,19 @@ update_discipline() {
     echo "📚 Atualizando disciplina: $discipline_name ($progress%)"
     
     # Usar perl para evitar problemas com caracteres especiais no sed
-    perl -i -pe "s/\*\*\Q$discipline_name\E\*\*.*$/\*\*$discipline_name\*\* | ${hours}h | ![Progress](https:\/\/img.shields.io\/badge\/${progress}%25-${color}) |/" "$DASHBOARD_FILE"
+    # Substituir apenas o badge de progresso preservando as demais colunas
+    perl -i -pe "s/(.*\*\*\Q$discipline_name\E\*\*.*?\|.*?\|)\s*!\[Progress\]\([^)]+\)(\s*\|.*)/\$1 ![Progress](https:\/\/img.shields.io\/badge\/${progress}%25-${color})\$2/" "$DASHBOARD_FILE"
 }
 
 echo "📈 Atualizando progresso das disciplinas individuais..."
 
 # Atualizar disciplinas específicas baseadas nas issues
-update_discipline "2" "Matemática Aplicada" "60"
-update_discipline "3" "Tecnologia de Redes" "80"  
-update_discipline "4" "Redes de Computadores Remotas" "80"
-update_discipline "5" "Cabeamento Estruturado" "60"
-update_discipline "6" "Tecnologias de Roteamento" "80"
-update_discipline "7" "Sistema Linux" "60"
+update_discipline "2" "Matemática Aplicada"
+update_discipline "3" "Tecnologia de Redes"  
+update_discipline "4" "Redes de Computadores Remotas"
+update_discipline "5" "Cabeamento Estruturado"
+update_discipline "6" "Tecnologias de Roteamento"
+update_discipline "7" "Sistema Linux"
 
 echo "🎯 Calculando progresso geral..."
 
@@ -206,8 +207,8 @@ echo "📊 Progresso acadêmico médio: $ACADEMIC_AVERAGE%"
 ACADEMIC_COLOR=$(get_badge_color $ACADEMIC_AVERAGE)
 ACADEMIC_STATUS=$(get_status_text $ACADEMIC_AVERAGE)
 
-# Atualizar linha do resumo executivo usando perl
-perl -i -pe "s/📚 \*\*Progresso Acadêmico\*\*.*$/📚 \*\*Progresso Acadêmico\*\* | ![Progress](https:\/\/img.shields.io\/badge\/${ACADEMIC_AVERAGE}%25-${ACADEMIC_COLOR}) | $ACADEMIC_STATUS |/" "$DASHBOARD_FILE"
+# Atualizar linha do resumo executivo usando perl - preservando coluna "Próximo Milestone"
+perl -i -pe "s/(.*📚 \*\*Progresso Acadêmico\*\*.*?\|)\s*!\[Progress\]\([^)]+\)(\s*\|.*)/\$1 ![Progress](https:\/\/img.shields.io\/badge\/${ACADEMIC_AVERAGE}%25-${ACADEMIC_COLOR})\$2/" "$DASHBOARD_FILE"
 
 # Atualizar timestamp
 CURRENT_DATE=$(date '+%d de %B de %Y')

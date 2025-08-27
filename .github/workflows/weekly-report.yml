@@ -1,0 +1,125 @@
+name: 📊 Relatório Semanal Automático
+
+on:
+  # Execução automática todo domingo às 21:00 UTC (18:00 BRT)
+  schedule:
+    - cron: '0 21 * * 0'
+  
+  # Permite execução manual para testes
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Motivo da execução manual'
+        required: false
+        default: 'Execução manual de teste'
+
+# Permissões necessárias
+permissions:
+  contents: write  # Para criar commits e push
+  issues: read     # Para ler issues do GitHub
+  pull-requests: read
+
+jobs:
+  generate-weekly-report:
+    runs-on: ubuntu-latest
+    name: 🚀 Gerar Relatório Semanal
+    
+    steps:
+      - name: 📥 Checkout do Repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Histórico completo para análise
+          
+      - name: ⚙️ Configurar Ambiente
+        run: |
+          echo "🔧 Configurando ambiente para geração de relatórios..."
+          sudo apt-get update
+          sudo apt-get install -y bc jq
+          
+      - name: 📊 Executar Script de Relatório Semanal  
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "📈 Iniciando geração do relatório semanal..."
+          cd /home/runner/work/carreira-infra-security/carreira-infra-security
+          chmod +x scripts/weekly-report.sh
+          ./scripts/weekly-report.sh
+          
+      - name: 📝 Verificar Arquivos Gerados
+        run: |
+          echo "🔍 Verificando arquivos gerados..."
+          ls -la reports/weekly/ || echo "Diretório de relatórios ainda não existe"
+          ls -la latest-weekly-report || echo "Link simbólico ainda não criado"
+          
+          if [ -f latest-weekly-report ]; then
+            echo "✅ Relatório gerado com sucesso!"
+            echo "📊 Prévia do relatório:"
+            head -20 latest-weekly-report
+          else
+            echo "⚠️ Relatório não foi gerado corretamente"
+            exit 1
+          fi
+          
+      - name: 📤 Commit e Push dos Relatórios
+        run: |
+          echo "💾 Salvando relatório no repositório..."
+          
+          # Configurar Git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions - Weekly Report"
+          
+          # Adicionar arquivos gerados
+          git add reports/
+          git add latest-weekly-report
+          
+          # Verificar se há mudanças
+          if git diff --staged --quiet; then
+            echo "📋 Nenhuma mudança detectada, nada para commitar"
+          else
+            # Commit com informações da semana
+            WEEK_NUM=$(date '+%V')
+            CURRENT_DATE=$(date '+%d/%m/%Y')
+            
+            git commit -m "📊 Relatório Semanal Automático - Semana ${WEEK_NUM} (${CURRENT_DATE})
+
+            🤖 Relatório gerado automaticamente pelo GitHub Actions
+            📅 Data: ${CURRENT_DATE}
+            📈 Semana: ${WEEK_NUM}
+            🔗 Acesso: latest-weekly-report
+            
+            - ✅ Novo relatório criado
+            - 🔗 Links simbólicos atualizados  
+            - 📊 Dados extraídos dos KPIs atuais
+            "
+            
+            # Push para o repositório
+            git push
+            
+            echo "✅ Relatório commitado e enviado com sucesso!"
+          fi
+          
+      - name: 📋 Resumo da Execução
+        run: |
+          echo "📊 RESUMO DA EXECUÇÃO DO RELATÓRIO SEMANAL"
+          echo "════════════════════════════════════════════════"
+          echo "📅 Data de execução: $(date '+%d/%m/%Y %H:%M:%S')"
+          echo "📈 Semana do ano: $(date '+%V')"
+          echo "🤖 Executado via: GitHub Actions"
+          echo "🔄 Próxima execução: Próximo domingo às 18:00 BRT"
+          echo ""
+          echo "📁 Arquivos gerados:"
+          find reports/ -name "*.md" -type f | sort || echo "Nenhum arquivo encontrado"
+          echo ""
+          echo "🔗 Link de acesso rápido:"
+          ls -la latest-weekly-report || echo "Link não encontrado"
+          echo ""
+          echo "✅ Workflow concluído com sucesso!"
+
+      - name: 🚨 Notificação de Erro (se falhar)
+        if: failure()
+        run: |
+          echo "❌ ERRO na geração do relatório semanal"
+          echo "🔍 Verifique os logs acima para detalhes"
+          echo "📞 Considere executar manualmente para debug:"
+          echo "   ./scripts/weekly-report.sh"
+          exit 1

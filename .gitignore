@@ -5,8 +5,9 @@ planos_ensino/
 issues_disciplinas/
 scripts/scripts_testes/
 disciplinas/
+github-pages-setup/
 
 # Arquivo específico de trilhas
 TrilhasNetacad.md
-
-
+github-pages-setup/README.md
+/workspaces/carreira-infra-security/github-pages-setup/README.md

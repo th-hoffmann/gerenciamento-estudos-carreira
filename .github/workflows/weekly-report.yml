@@ -65,8 +65,8 @@ jobs:
           echo "💾 Salvando relatório no repositório..."
           
           # Configurar Git
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Actions - Weekly Report"
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
           
           # Adicionar arquivos gerados
           git add reports/

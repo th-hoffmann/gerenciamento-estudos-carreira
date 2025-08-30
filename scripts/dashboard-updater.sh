@@ -173,9 +173,10 @@ update_discipline() {
     
     echo "📚 Atualizando disciplina: $discipline_name ($progress%)"
     
-    # Usar perl para evitar problemas com caracteres especiais no sed
-    # Substituir apenas o badge de progresso preservando as demais colunas
-    perl -i -pe "s/(.*\*\*\Q$discipline_name\E\*\*.*?\|.*?\|)\s*!\[Progress\]\([^)]+\)(\s*\|.*)/\$1 ![Progress](https:\/\/img.shields.io\/badge\/${progress}%25-${color})\$2/" "$DASHBOARD_FILE"
+    # Usar perl com regex mais preciso - substitui APENAS o badge de progresso
+    # Captura: nome | carga | [BADGE_ANTIGO] | prazo | status
+    # Substitui: nome | carga | [BADGE_NOVO] | prazo | status
+    perl -i -pe "s/(\|\s*\*\*\Q$discipline_name\E\*\*\s*\|\s*\d+h\s*\|\s*)!\[Progress\]\([^)]+\)(\s*\|\s*[^|]+\s*\|\s*[^|]+\s*\|)/\$1![Progress](https:\/\/img.shields.io\/badge\/${progress}%25-${color})\$2/" "$DASHBOARD_FILE"
 }
 
 echo "📈 Atualizando progresso das disciplinas individuais..."

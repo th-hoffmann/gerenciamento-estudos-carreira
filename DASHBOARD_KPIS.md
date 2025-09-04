@@ -4,7 +4,7 @@
 
 | **Área** | **Progresso** | **Status** | **Próximo Milestone** |
 |----------|--------------|------------|----------------------|
-| 📚 **Progresso Acadêmico** | ![Progress](https://img.shields.io/badge/16%25-red) | 🚨 Crítico | Matemática Aplicada |
+| 📚 **Progresso Acadêmico** | ![Progress](https://img.shields.io/badge/2%25-red) | 🚨 Crítico | Matemática Aplicada |
 | 🏆 **Certificações** | ![Progress](https://img.shields.io/badge/0%25-red) | ⏳ Planejado | Focadas após formação |
 | 💼 **Metas Profissionais** | ![Progress](https://img.shields.io/badge/0%25-gray) | 📋 Preparação | Primeiro emprego Jun/26 |
 
@@ -119,6 +119,6 @@
 
 ---
 
-**📅 Próxima atualização**: 04/09/2025
+**📅 Próxima atualização**: 05/09/2025
 
 > 💡 **Dica**: Este dashboard é atualizado automaticamente todos os dias às 09:00 via GitHub Actions para acompanhamento contínuo do seu desenvolvimento profissional.

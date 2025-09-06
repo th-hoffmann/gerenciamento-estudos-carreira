@@ -124,25 +124,71 @@ get_status_text() {
     fi
 }
 
-# Função para extrair progresso de uma issue específica
+# Função para extrair progresso de uma issue específica baseado em sub-issues
 get_issue_progress() {
     local issue_number=$1
-    echo "📊 Extraindo progresso da Issue #$issue_number..." >&2
+    echo "📊 Calculando progresso da Issue #$issue_number baseado em sub-issues..." >&2
     
-    # Obter corpo da issue
-    local issue_body
-    issue_body=$(gh issue view $issue_number --json body | jq -r '.body')
+    # Obter título da issue principal para identificar sub-issues relacionadas
+    local issue_title
+    issue_title=$(gh issue view $issue_number --json title | jq -r '.title')
     
-    # Extrair progresso (buscar padrões como **Progresso Atual**: ██░░░░░░░░ 17%)
-    local progress
-    progress=$(echo "$issue_body" | grep "Progresso Atual" | grep -o "[0-9]\+%" | head -1 | tr -d '%')
+    # Definir termos de busca baseados no número da issue
+    local search_terms=""
+    case $issue_number in
+        2) # Matemática Aplicada
+            search_terms="matemática"
+            ;;
+        3) # Tecnologia de Redes  
+            search_terms="tecnologia.*redes|redes.*tecnologia"
+            ;;
+        4) # Redes Remotas
+            search_terms="redes.*remotas|remotas.*redes"
+            ;;
+        5) # Cabeamento Estruturado
+            search_terms="cabeamento"
+            ;;
+        6) # Tecnologias de Roteamento
+            search_terms="roteamento"
+            ;;
+        7) # Sistema Linux
+            search_terms="linux"
+            ;;
+    esac
     
-    # Se não encontrou, buscar por padrões alternativos
-    if [ -z "$progress" ]; then
-        progress=$(echo "$issue_body" | grep -o "█\+░\+.*[0-9]\+%" | head -1 | grep -o "[0-9]\+%" | tr -d '%')
+    # Buscar sub-issues relacionadas
+    local total_subissues=0
+    local closed_subissues=0
+    
+    # Obter todas as issues e filtrar por termos relacionados
+    local all_issues
+    all_issues=$(gh issue list --state all --json number,title,state --limit 100)
+    
+    # Filtrar issues relacionadas usando jq
+    local related_issues
+    related_issues=$(echo "$all_issues" | jq -r '.[] | select(.title | test("'$search_terms'"; "i")) | "\(.number) \(.state)"')
+    
+    if [ -n "$related_issues" ]; then
+        while IFS=' ' read -r issue_num state; do
+            # Ignorar a issue principal
+            if [ "$issue_num" != "$issue_number" ]; then
+                total_subissues=$((total_subissues + 1))
+                if [ "$state" = "CLOSED" ]; then
+                    closed_subissues=$((closed_subissues + 1))
+                fi
+            fi
+        done <<< "$related_issues"
     fi
     
-    echo ${progress:-0}
+    # Verificar se a disciplina tem sub-issues
+    if [ $total_subissues -gt 0 ]; then
+        local progress=$(( (closed_subissues * 100) / total_subissues ))
+        echo "   📋 Sub-issues encontradas: $total_subissues (fechadas: $closed_subissues) = $progress%" >&2
+        echo $progress
+    else
+        echo "   ⏭️  Nenhuma sub-issue encontrada, pulando disciplina..." >&2
+        echo "SKIP"
+    fi
 }
 
 # Função para atualizar badge no dashboard
@@ -164,19 +210,24 @@ update_dashboard_badge() {
 update_discipline() {
     local issue_num="$1"
     local discipline_name="$2"
-    # local hours="$3"  # Não utilizado pois preservamos a estrutura original
     
     local progress
     progress=$(get_issue_progress $issue_num)
+    
+    # Verificar se a disciplina deve ser pulada
+    if [ "$progress" = "SKIP" ]; then
+        echo "⏭️  Pulando disciplina: $discipline_name (sem sub-issues)"
+        return 0
+    fi
+    
     local color
     color=$(get_badge_color $progress)
     
     echo "📚 Atualizando disciplina: $discipline_name ($progress%)"
     
-    # Usar perl com regex mais preciso - substitui APENAS o badge de progresso
-    # Captura: nome | carga | [BADGE_ANTIGO] | prazo | status
-    # Substitui: nome | carga | [BADGE_NOVO] | prazo | status
-    perl -i -pe "s/(\|\s*\*\*\Q$discipline_name\E\*\*\s*\|\s*\d+h\s*\|\s*)!\[Progress\]\([^)]+\)(\s*\|\s*[^|]+\s*\|\s*[^|]+\s*\|)/\$1![Progress](https:\/\/img.shields.io\/badge\/${progress}%25-${color})\$2/" "$DASHBOARD_FILE"
+    # Usar perl para evitar problemas com caracteres especiais no sed
+    # Substituir apenas o badge de progresso preservando as demais colunas
+    perl -i -pe "s/(.*\*\*\Q$discipline_name\E\*\*.*?\|.*?\|)\s*!\[Progress\]\([^)]+\)(\s*\|.*)/\$1 ![Progress](https:\/\/img.shields.io\/badge\/${progress}%25-${color})\$2/" "$DASHBOARD_FILE"
 }
 
 echo "📈 Atualizando progresso das disciplinas individuais..."
@@ -191,18 +242,26 @@ update_discipline "7" "Sistema Linux"
 
 echo "🎯 Calculando progresso geral..."
 
-# Calcular progresso acadêmico geral baseado nas disciplinas
-TOTAL_DISCIPLINES=6
+# Calcular progresso acadêmico geral baseado apenas nas disciplinas com sub-issues
+VALID_DISCIPLINES=0
 ACADEMIC_TOTAL=0
 
 for issue_num in 2 3 4 5 6 7; do
     progress=$(get_issue_progress $issue_num)
-    ACADEMIC_TOTAL=$((ACADEMIC_TOTAL + progress))
+    if [ "$progress" != "SKIP" ]; then
+        ACADEMIC_TOTAL=$((ACADEMIC_TOTAL + progress))
+        VALID_DISCIPLINES=$((VALID_DISCIPLINES + 1))
+    fi
 done
 
-ACADEMIC_AVERAGE=$((ACADEMIC_TOTAL / TOTAL_DISCIPLINES))
-
-echo "📊 Progresso acadêmico médio: $ACADEMIC_AVERAGE%"
+# Calcular média apenas das disciplinas válidas
+if [ $VALID_DISCIPLINES -gt 0 ]; then
+    ACADEMIC_AVERAGE=$((ACADEMIC_TOTAL / VALID_DISCIPLINES))
+    echo "📊 Progresso acadêmico médio: $ACADEMIC_AVERAGE% (baseado em $VALID_DISCIPLINES disciplinas)"
+else
+    ACADEMIC_AVERAGE=0
+    echo "⚠️  Nenhuma disciplina com sub-issues encontrada, usando 0%"
+fi
 
 # Atualizar resumo executivo
 ACADEMIC_COLOR=$(get_badge_color $ACADEMIC_AVERAGE)

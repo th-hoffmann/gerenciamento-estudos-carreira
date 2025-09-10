@@ -2,7 +2,7 @@
   
 # 🎓 Plano de Desenvolvimento Integral em Infraestrutura e Cybersegurança
 
-*Gerenciamento de estudos e projetos que integram a formação acadêmica em Redes de Computadores com um roteiro prático de cursos focados em Infraestrutura, Segurança e Cloud.*
+*Gerenciamento de estudos e projetos que integram a formação acadêmica Tecnologia em Redes de Computadores com um roteiro prático de cursos focados em Infraestrutura, Segurança e Computação em Nuvem.*
 
 [![GitHub Projects](https://img.shields.io/badge/GitHub-Projects-blue?style=for-the-badge&logo=github)](https://github.com/users/th-hoffmann/projects)
 [![Academic](https://img.shields.io/badge/Academic-Level-green?style=for-the-badge&logo=academicapple)](https://github.com/th-hoffmann)
@@ -16,11 +16,11 @@
 
 ## 📋 Sobre o Projeto
 
-Este repositório serve como **centro de comando** para meu desenvolvimento profissional em Tecnologia da Informação, integrando:
+Este repositório em conjunto com sua [página do Github Projects](https://github.com/users/th-hoffmann/projects/3) servem como **centro de comando** para meu desenvolvimento profissional em Tecnologia da Informação, integrando:
 
-- 🎯 **Formação Acadêmica**: Tecnólogo em Redes de Computadores (4 semestres - 640h)
-- 📚 **Desenvolvimento Complementar**: Cursos especializados em infraestrutura, segurança e cloud
-- 🚀 **Planejamento de Carreira**: Roteiro estruturado com metas e marcos
+- 🎓 **Formação Acadêmica**: Tecnologia em Redes de Computadores (4 semestres - 640h)
+- 📚 **Desenvolvimento Complementar**: Cursos especializados em infraestrutura, segurança e computação em nuvem.
+- 🚀 **Planejamento de Carreira**: Roteiro estruturado com metas e marcos definidos.
 
 &nbsp;
 
@@ -28,17 +28,19 @@ Este repositório serve como **centro de comando** para meu desenvolvimento prof
 
 ```mermaid
 graph TD
-    A[📚 Formação Base] --> B[🌐 Redes de Computadores]
+    A[🎓 Formação Base] --> B[🌐 Redes de Computadores]
     A --> C[💻 Infraestrutura]
-    A --> D[🔒 Segurança]
-    A --> E[☁️ Cloud Computing]
+    A --> D[🧠 Lógica de Programação]
+    A --> E[🔒 Segurança]
+    A --> F[☁️ Computação em Nuvem]
+
+    B --> G[📈 Aplicação Prática]
+    C --> G
+    D --> G
+    E --> G
+    F --> G
     
-    B --> F[📈 Aplicação Prática]
-    C --> F
-    D --> F
-    E --> F
-    
-    F --> G[🎯 Objetivos de Carreira]
+    G --> H[🎯 Objetivos de Carreira]
 ```
 
 &nbsp;
@@ -124,61 +126,61 @@ graph TD
 
 &nbsp;
 
-## 🎓 Grade Curricular - Tecnólogo em Redes
+## 🎓 Grade Curricular - Tecnologia em Redes de Computadores
 
 ### 📚 **1º Semestre** (Agosto - Dezembro 2025) - **440h**
 
 | Disciplina | Carga Horária | Status |
-|------------|---------------|---------|
-| 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/Progress-83%25-green) |
-| 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/Progress-17%25-orange) |
+|------------|---------------|--------|
 | 🌍 **Ambientação Digital** | 20h | ![Status](https://img.shields.io/badge/Status-Concluída-brightgreen) |
-| 📋 **Plano de Acompanhamento de Carreira I** | 10h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
+| 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/Status-Concluída-brightgreen) |
+| 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/Status-Concluída-brightgreen) |
+| 🖥️ **Redes de Computadores Remotas** | 80h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
 | 🤝 **Atividades de Extensão** | 50h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
-| 🖥️ **Redes de Computadores Remotas** | 80h | ![Status](https://img.shields.io/badge/Status-Setembro-yellow) |
-| 📊 **Cabeamento Estruturado** | 60h | ![Status](https://img.shields.io/badge/Status-Outubro-yellow) |
-| 🔄 **Tecnologias de Roteamento** | 80h | ![Status](https://img.shields.io/badge/Status-Novembro-yellow) |
-| 🐧 **Sistema Linux** | 60h | ![Status](https://img.shields.io/badge/Status-Dezembro-yellow) |
-| 📝 **Avaliação Integrada I** | 0h | ![Status](https://img.shields.io/badge/Status-Dezembro-yellow) |
+| 📋 **Plano de Acompanhamento de Carreira I** | 10h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
+| 📊 **Cabeamento Estruturado** | 60h | ![Status](https://img.shields.io/badge/Status-Outubro-blue) |
+| 🔄 **Tecnologias de Roteamento** | 80h | ![Status](https://img.shields.io/badge/Status-Novembro-blue) |
+| 🐧 **Sistema Linux** | 60h | ![Status](https://img.shields.io/badge/Status-Dezembro-blue) |
+| 📝 **Avaliação Integrada I** | 0h | ![Status](https://img.shields.io/badge/Status-Dezembro-blue) |
 
 ### 📚 **2º Semestre** (2026) - **400h**
 
-| Disciplina | Carga Horária |
-|------------|---------------|
-| 🏗️ Infraestrutura de Tecnologia da Informação | 40h |
-| 🌐 Redes sem Fio | 60h |
-| 🔄 Tecnologias em Switching | 80h |
-| ☁️ Computação em Nuvem | 80h |
-| 🔐 Segurança da Informação | 80h |
-| 🌍 Diversidade Étnico-Cultural | 60h |
+| Disciplina | Carga Horária | Status |
+|------------|---------------|--------|
+| 🏗️ Infraestrutura de Tecnologia da Informação | 40h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2026-blue) |
+| 🌐 Redes sem Fio | 60h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2026-blue) |
+| 🔄 Tecnologias em Switching | 80h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2026-blue) |
+| ☁️ Computação em Nuvem | 80h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2026-blue) |
+| 🔐 Segurança da Informação | 80h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2026-blue) |
+| 🌍 Diversidade Étnico-Cultural | 60h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2026-blue) |
 
 ### 📚 **3º Semestre** (2026) - **400h**
 
-| Disciplina | Carga Horária |
-|------------|---------------|
-| 💼 Empreendedorismo | 40h |
-| 🏗️ Arquitetura de Sistemas Distribuídos | 40h |
-| 🌐 Redes Heterogêneas e Conectividades | 60h |
-| 🔧 Administração de Redes | 80h |
-| 🛠️ Administração de Servidores | 60h |
-| 🔗 Conectividade de Redes | 80h |
+| Disciplina | Carga Horária | Status |
+|------------|---------------|--------|
+| 💼 Empreendedorismo | 40h | ![Status](https://img.shields.io/badge/Status-2º_Semestre_2026-blue) |
+| 🏗️ Arquitetura de Sistemas Distribuídos | 40h | ![Status](https://img.shields.io/badge/Status-2º_Semestre_2026-blue) |
+| 🌐 Redes Heterogêneas e Conectividades | 60h | ![Status](https://img.shields.io/badge/Status-2º_Semestre_2026-blue) |
+| 🔧 Administração de Redes | 80h | ![Status](https://img.shields.io/badge/Status-2º_Semestre_2026-blue) |
+| 🛠️ Administração de Servidores | 60h | ![Status](https://img.shields.io/badge/Status-2º_Semestre_2026-blue) |
+| 🔗 Conectividade de Redes | 80h | ![Status](https://img.shields.io/badge/Status-2º_Semestre_2026-blue) |
 
 ### 📚 **4º Semestre** (2027) - **400h**
 
-| Disciplina | Carga Horária |
-|------------|---------------|
-| 🇧🇷 Língua Portuguesa | 40h |
-| 🏛️ Organização e Arquitetura de Computadores | 60h |
-| 💻 Programação de Computadores | 40h |
-| 🌐 Redes de Computadores | 60h |
-| ⚙️ Sistemas Operacionais | 60h |
-| 🔧 Princípios de Administração e Marketing | 40h |
+| Disciplina | Carga Horária | Status |
+|------------|---------------|--------|
+| 🇧🇷 Língua Portuguesa | 40h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2027-blue) |
+| 🏛️ Organização e Arquitetura de Computadores | 60h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2027-blue) |
+| 💻 Programação de Computadores | 40h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2027-blue) |
+| 🌐 Redes de Computadores | 60h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2027-blue) |
+| ⚙️ Sistemas Operacionais | 60h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2027-blue) |
+| 🔧 Princípios de Administração e Marketing | 40h | ![Status](https://img.shields.io/badge/Status-1º_Semestre_2027-blue) |
 
 &nbsp;
 
 ## 📊 Status Detalhado - Disciplinas em Andamento
 
-### 🌐 **Tecnologia de Redes** (83% concluído)
+### 🌐 **Tecnologia de Redes** (100% concluído)
 
 ✅ **Módulos Concluídos:**
 
@@ -186,34 +188,45 @@ graph TD
 - Módulo 2: Protocolos, Padrões e Acesso a Rede
 - Módulo 3: Rede Ethernet
 - Módulo 4: Camada de Rede e Endereçamento IP
-
-🟡 **Em Andamento:**
-
 - Módulo 5: Sub-Redes e Camada de Transporte
-
-⏳ **Próximo:**
-
 - Módulo 6: Camada de Aplicação e Desenho Básico de Rede
 
-### 📐 **Matemática Aplicada** (17% concluído)
+### 📐 **Matemática Aplicada** (100% concluído)
 
-🟡 **Em Andamento:**
+✅ **Módulos Concluídos:**
 
 - Módulo 1: Conjuntos e Intervalos Reais
-
-⏳ **Próximos:**
-
 - Módulo 2: Conjuntos Numéricos e Operações
 - Módulo 3: Relações Binárias e Funções
 - Módulo 4: Função Afim
 - Módulo 5: Função Quadrática
 - Módulo 6: Matrizes e Sistemas Lineares
 
+### 🖥️ **Redes de Computadores Remotas** (Em andamento)
+
+✅ **Módulos Concluídos:**
+
+🟡 **Em Andamento:**
+
+- Módulo 1: Acesso Remoto
+
+⏳ **Próximos:**
+
+- Módulo 2: Aplicação para Rede Virtual
+- Módulo 3: Computação em Nuvem e Internet
+- Módulo 4: Integração das Redes Remotas
+- Módulo 5: Rádio Frequência
+- Módulo 6: Redes Remotas
+
+&nbsp;
+
 ### 📋 **Plano de Acompanhamento de Carreira I** (Em andamento)
 
 🟡 **Status:**
 
 - Atividade contínua durante todo o semestre
+
+&nbsp;
 
 ### 🤝 **Atividades de Extensão** (Em andamento)
 
@@ -227,27 +240,34 @@ graph TD
 
 ### 🎓 **2025 - Fundação**
 
-- [x] Início do curso de Tecnólogo em Redes (01/08/2025)
-- [x] Setup do ambiente de estudos
-- [x] **Ambientação Digital** - Concluída
-- [x] Conclusão de 4 módulos de **Tecnologia de Redes**
-- [ ] **Meta**: Concluir primeiro ciclo até 10/09/2025
-- [ ] Primeira certificação cloud
+- [x] **Início da graduação Tecnologia em Redes de Computadores (01/08/2025)**
+- [x] **Configuração do ambiente de estudos**
+- [x] **Ambientação Digital**
+- [x] **Tecnologia de Redes**
+- [x] **Matematica Aplicada**
+- [ ] **Redes de Computadores Remotas**
+- [ ] **Cabeamento Estruturado**
+- [ ] **Tecnologias de Roteamento**
+- [ ] **Sistema Linux**
+- [ ] **Atividade de Extensão**
+- [ ] **Plano de Acompanhamento de Carreira I**
+- [ ] **Conclusão do 1º Semestre**
+- [ ] Primeira certificação: CCST - Networking
 
 ### 🚀 **2026 - Aceleração Profissional**
 
-- [ ] Conclusão do 1º e 2º semestre
-- [ ] 5 certificações entry-level (CCST, ISC2 CC, LPIC-1)
-- [ ] **🎯 META ANTECIPADA: Primeiro emprego júnior (Jun/2026)**
-- [ ] Portfolio técnico sólido
-- [ ] Networking profissional ativo
+- [ ] **Conclusão do 2º e 3º semestres**
+- [ ] **3 certificações entry-level (CCST - Security, ISC2 - CC, LPIC-1)**
+- [ ] **🎯 META: Primeiro emprego júnior (Jun/2026)**
+- [ ] **Portfolio técnico sólido**
+- [ ] **Networking profissional ativo**
 
 ### 💼 **2027 - Consolidação e Crescimento**
 
-- [ ] Conclusão do tecnólogo (4 semestres)
-- [ ] Certificação CCNA (networking avançado)
-- [ ] Crescimento na posição júnior
-- [ ] Preparação para nível pleno
+- [ ] **Conclusão do tecnólogo (4 semestres)**
+- [ ] **Certificação CCNA (networking avançado)**
+- [ ] **Crescimento na posição júnior**
+- [ ] **Preparação para nível pleno**
 
 &nbsp;
 
@@ -255,12 +275,12 @@ graph TD
 
 | Disciplina | Progresso | Status | Próximo Marco |
 |------------|-----------|---------|---------------|
-| 🌐 **Tecnologia de Redes** | ![Progress](https://img.shields.io/badge/Progress-83%25-green) | 🟢 Avançado | Módulo 6 (10/09) |
-| 📐 **Matemática Aplicada** | ![Progress](https://img.shields.io/badge/Progress-17%25-orange) | 🟡 Iniciando | Módulo 2 (10/09) |
 | 🌍 **Ambientação Digital** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
-| � **Plano de Acompanhamento de Carreira I** | ![Progress](https://img.shields.io/badge/Progress-50%25-yellow) | 🟡 Em Andamento | Contínuo |
+| 📐 **Matemática Aplicada** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
+| 🌐 **Tecnologia de Redes** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
+| �🖥️ **Redes de Computadores Remotas** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🟡 Iniciando  | 01/10/2025 |
 | 🤝 **Atividades de Extensão** | ![Progress](https://img.shields.io/badge/Progress-30%25-orange) | 🟡 Em Andamento | Contínuo |
-| �🖥️ **Redes de Computadores Remotas** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Setembro 2025 |
+| � **Plano de Acompanhamento de Carreira I** | ![Progress](https://img.shields.io/badge/Progress-50%25-yellow) | 🟡 Em Andamento | Contínuo |
 | 📊 **Cabeamento Estruturado** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Outubro 2025 |
 | 🔄 **Tecnologias de Roteamento** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Novembro 2025 |
 | 🐧 **Sistema Linux** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |
@@ -272,10 +292,10 @@ graph TD
 
 | Data | Marco | Disciplinas |
 |------|-------|-------------|
-| **10/09/2025** | 🎯 **Deadline Crítico** | Tecnologia de Redes + Matemática Aplicada |
-| **30/09/2025** | 📝 Início Setembro | Redes de Computadores Remotas |
-| **31/10/2025** | 📝 Início Outubro | Cabeamento Estruturado |
-| **30/11/2025** | 📝 Início Novembro | Tecnologias de Roteamento |
+| **10/09/2025** | 🎯 Setembro | Tecnologia de Redes + Matemática Aplicada |
+| **30/09/2025** | 📝 Início Outubro | Redes de Computadores Remotas |
+| **31/10/2025** | 📝 Início Novembro | Cabeamento Estruturado |
+| **30/11/2025** | 📝 Início Dezembro | Tecnologias de Roteamento |
 | **31/12/2025** | 🏆 **Conclusão 1º Semestre** | Todas as disciplinas do semestre |
 
 &nbsp;
@@ -306,20 +326,12 @@ graph TD
 
 ### 🔐 **Segurança**
 
-![Nmap](https://img.shields.io/badge/-Nmap-4682B4?style=flat-square&logo=nmap&logoColor=white)
+![pfSense](https://img.shields.io/badge/-pfSense-1C517D?style=flat-square&logo=pfsense&logoColor=white)
 ![Metasploit](https://img.shields.io/badge/-Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
+![Nmap](https://img.shields.io/badge/-Nmap-4682B4?style=flat-square&logo=nmap&logoColor=white)
 
 </div>
 
-## 📚 Recursos de Estudo
-
-### 📖 **Bibliografia Essencial**
-
-- **Redes**: "Redes de Computadores" - Andrew Tanenbaum
-- **Segurança**: "Segurança de Computadores" - William Stallings
-- **Cloud**: "AWS Certified Solutions Architect" - Official Study Guide
-- **Linux**: "Linux: Guia do Administrador do Sistema" - Evi Nemeth
-- **Matemática**: "Matemática Discreta para Computação" - J. Gersting
 
 ### 🎯 **Certificações Alvo**
 
@@ -358,7 +370,7 @@ graph TD
 
 #### 🚀 Transformando conhecimento em oportunidades | 📈 Crescimento acelerado em TI**
   
-#### ⏰ Próximo Marco: 10/09/2025 - Conclusão do primeiro ciclo**
+#### ⏰ Próximo Marco: 01/10/2025 - Conclusão do segundo ciclo de disciplinas**
 
 #### 🎯 Meta Ambiciosa: Jun/2026 - Primeiro emprego júnior**
 

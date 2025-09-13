@@ -28,7 +28,8 @@ Este repositório em conjunto com sua [página do Github Projects](https://githu
 
 ```mermaid
 graph TD
-    A[🎓 Formação Base] --> B[🌐 Redes de Computadores]
+    A[🎓 Formação Base]
+    A --> B[🌐 Redes de Computadores]
     A --> C[💻 Infraestrutura]
     A --> D[🧠 Lógica de Programação]
     A --> E[🔒 Segurança]
@@ -65,7 +66,7 @@ graph TD
 - Ethical hacking e pentest
 - Compliance e governança
 
-### ☁️ **Cloud Computing**
+### ☁️ **Computação em Nuvem**
 
 - AWS, Azure, Google Cloud
 - DevOps e CI/CD
@@ -264,7 +265,7 @@ graph TD
 
 ### 💼 **2027 - Consolidação e Crescimento**
 
-- [ ] **Conclusão do tecnólogo (4 semestres)**
+- [ ] **Conclusão da graduação: Tecnologia em Redes de Computadores (4 semestres)**
 - [ ] **Certificação CCNA (networking avançado)**
 - [ ] **Crescimento na posição júnior**
 - [ ] **Preparação para nível pleno**
@@ -343,14 +344,6 @@ graph TD
 - [ ] **Azure Fundamentals AZ-900** - Fundamentos Microsoft Azure
 - [ ] **Cisco CCNA** - Networking profissional
 
-<!--
-### 🔗 **Links Úteis**
-- [Packet Tracer - Simulador Cisco](https://www.netacad.com/courses/packet-tracer)
-- [GNS3 - Simulador de Redes](https://www.gns3.com/)
-- [AWS Free Tier](https://aws.amazon.com/free/)
-- [Linux Journey](https://linuxjourney.com/)
-- [Khan Academy - Matemática](https://pt.khanacademy.org/math)
--->
 
 ## 📞 Contato e Networking
 

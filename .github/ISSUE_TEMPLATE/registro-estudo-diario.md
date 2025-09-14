@@ -1,6 +1,7 @@
 ---
 name: "📝 Registro de Estudo Diário"
-title: "Estudos Realizados no Dia: DD-MM-AAAA"
+about: Acompanhar a rotina de estudo diária.
+title: "📝 Estudos Realizados no Dia: DD-MM-AAAA"
 labels: registro-diario
 ---
 ### Referência: NUMERO_DA_ISSUE_SEMANAL

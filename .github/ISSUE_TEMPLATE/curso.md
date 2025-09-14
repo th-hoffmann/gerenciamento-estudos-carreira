@@ -8,11 +8,12 @@ labels: ['curso']
 
 ## 📋 Informações do Curso
 
-### ADICIONE O NOME DO CURSO AQUI 
+### ADICIONE O NOME DO CURSO AQUI
+
 - **Carga Horária**: 
 - **Plataforma**: 
 - **Instrutor**: 
-- **Link**: [Acessar o curso](INSiRA O LINK AQUI SEM REMOVER OS PARENTESES)
+- **Site**: [Acessar o curso](INSiRA O LINK AQUI SEM REMOVER OS PARENTESES)
 
 
 ---

@@ -1,6 +1,7 @@
 ---
 name: 📚 Curso
 about: Acompanhar progresso de cursos
+title: '📚 Nome do Curso - Plataforma de Ensino'
 labels: ['curso']
 ---
 

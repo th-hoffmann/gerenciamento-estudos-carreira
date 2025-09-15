@@ -4,7 +4,8 @@ about: Acompanhar a rotina de estudos e desenvolvimento de projetos diáriamente
 title: "📝 Atividades Realizadas no Dia: DD-MM-AAAA"
 labels: registro-diario
 ---
-#### Referência: NUMERO_DA_ISSUE_SEMANAL
+### Referência:
+- NUMERO_DA_ISSUE_SEMANAL
 
 
 ## ✅ Progresso nas Metas da Semana:
@@ -44,10 +45,11 @@ labels: registro-diario
 - Tempo Dedicado:
 
 
-## ⏱️ Tempo Total Dedicado a Estudos e Desenvolvimento de Projetos 
+## ⏱️ Tempo Dedicado
 
-- Tempo Total Dedicado:
-
+- Tempo Total Estudos:
+- Tempo Total Projetos:
+- **Tempo Total Dedicado:**
 
 ## 🤔 Dificuldades e Insights:
 

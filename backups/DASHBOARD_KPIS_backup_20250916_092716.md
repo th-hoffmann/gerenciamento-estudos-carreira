@@ -4,7 +4,7 @@
 
 | **Área** | **Progresso** | **Status** | **Próximo Milestone** |
 |----------|--------------|------------|----------------------|
-| 📚 **Progresso Acadêmico** | ![Progress](https://img.shields.io/badge/55%25-yellow) | 🚨 Crítico | Matemática Aplicada |
+| 📚 **Progresso Acadêmico** | ![Progress](https://img.shields.io/badge/66%25-yellow) | 🚨 Crítico | Matemática Aplicada |
 | 🏆 **Certificações** | ![Progress](https://img.shields.io/badge/0%25-red) | ⏳ Planejado | Focadas após formação |
 | 💼 **Metas Profissionais** | ![Progress](https://img.shields.io/badge/0%25-gray) | 📋 Preparação | Primeiro emprego Jun/26 |
 
@@ -23,8 +23,8 @@
 
 | **Disciplina** | **Carga** | **Progresso** | **Prazo** | **Status** |
 |----------------|-----------|---------------|-----------|-------------|
-| 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/83%25-green) | 10/09/2025 | 🟢 Em Andamento |
-| 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/83%25-green) | 10/09/2025 | � Crítico |
+| 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/100%25-brightgreen) | 10/09/2025 | 🟢 Em Andamento |
+| 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/100%25-brightgreen) | 10/09/2025 | � Crítico |
 | 🌍 **Ambientação Digital** | 20h | ![Progress](https://img.shields.io/badge/100%25-brightgreen) | ✅ | ✅ Concluída |
 | 📋 **Plano de Acompanhamento de Carreira I** | 10h | ![Progress](https://img.shields.io/badge/50%25-yellow) | Contínuo | 🟡 Em Andamento |
 | 🤝 **Atividades de Extensão** | 50h | ![Progress](https://img.shields.io/badge/30%25-orange) | Contínuo | 🟡 Em Andamento |
@@ -119,6 +119,6 @@
 
 ---
 
-**📅 Próxima atualização**: 09/09/2025
+**📅 Próxima atualização**: 16/09/2025
 
 > 💡 **Dica**: Este dashboard é atualizado automaticamente todos os dias às 09:00 via GitHub Actions para acompanhamento contínuo do seu desenvolvimento profissional.

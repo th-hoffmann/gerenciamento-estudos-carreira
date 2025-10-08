@@ -136,10 +136,10 @@ graph TD
 | 🌍 **Ambientação Digital** | 20h | ![Status](https://img.shields.io/badge/Status-Concluída-brightgreen) |
 | 📐 **Matemática Aplicada** | 60h | ![Progress](https://img.shields.io/badge/Status-Concluída-brightgreen) |
 | 🌐 **Tecnologia de Redes** | 80h | ![Progress](https://img.shields.io/badge/Status-Concluída-brightgreen) |
-| 🖥️ **Redes de Computadores Remotas** | 80h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
+| 🖥️ **Redes de Computadores Remotas** | 80h | ![Status](https://img.shields.io/badge/Status-Concluída-brightgreen) |
 | 🤝 **Atividades de Extensão** | 50h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
 | 📋 **Plano de Acompanhamento de Carreira I** | 10h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
-| 📊 **Cabeamento Estruturado** | 60h | ![Status](https://img.shields.io/badge/Status-Outubro-blue) |
+| 📊 **Cabeamento Estruturado** | 60h | ![Status](https://img.shields.io/badge/Status-Em_Andamento-yellow) |
 | 🔄 **Tecnologias de Roteamento** | 80h | ![Status](https://img.shields.io/badge/Status-Novembro-blue) |
 | 🐧 **Sistema Linux** | 60h | ![Status](https://img.shields.io/badge/Status-Dezembro-blue) |
 | 📝 **Avaliação Integrada I** | 0h | ![Status](https://img.shields.io/badge/Status-Dezembro-blue) |
@@ -279,10 +279,10 @@ graph TD
 | 🌍 **Ambientação Digital** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
 | 📐 **Matemática Aplicada** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
 | 🌐 **Tecnologia de Redes** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
-| �🖥️ **Redes de Computadores Remotas** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🟡 Iniciando  | 01/10/2025 |
+| �🖥️ **Redes de Computadores Remotas** | ![Progress](https://img.shields.io/badge/Progress-100%25-brightgreen) | ✅ Concluída | - |
 | 🤝 **Atividades de Extensão** | ![Progress](https://img.shields.io/badge/Progress-30%25-orange) | 🟡 Em Andamento | Contínuo |
 | � **Plano de Acompanhamento de Carreira I** | ![Progress](https://img.shields.io/badge/Progress-50%25-yellow) | 🟡 Em Andamento | Contínuo |
-| 📊 **Cabeamento Estruturado** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Outubro 2025 |
+| 📊 **Cabeamento Estruturado** | ![Progress](https://img.shields.io/badge/Progress-20%25-orange) | 🟡 Em Andamento | Outubro 2025 |
 | 🔄 **Tecnologias de Roteamento** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Novembro 2025 |
 | 🐧 **Sistema Linux** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |
 | 📝 **Avaliação Integrada I** | ![Progress](https://img.shields.io/badge/Progress-0%25-red) | 🔴 Aguardando | Dezembro 2025 |

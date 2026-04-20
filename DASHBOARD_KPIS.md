@@ -119,6 +119,6 @@
 
 ---
 
-**📅 Próxima atualização**: 20/04/2026
+**📅 Próxima atualização**: 21/04/2026
 
 > 💡 **Dica**: Este dashboard é atualizado automaticamente todos os dias às 09:00 via GitHub Actions para acompanhamento contínuo do seu desenvolvimento profissional.

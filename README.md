@@ -375,6 +375,6 @@ graph TD
   <sub>
     Desenvolvido com ❤️ por <a href="https://github.com/th-hoffmann">th-hoffmann</a>
     <br>
-    <em>Última atualização: 10 de July de 2026
+    <em>Última atualização: 11 de July de 2026
   </sub>
 </div>
